@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing - Waterfall Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+        .waterfall-grid {
+            column-count: 3; /* Adjust the number of columns as needed */
+            column-gap: 10px;
+        }
+        .product-item {
+            break-inside: avoid;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .product-item h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+        .product-item p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .product-item .price {
+            font-weight: bold;
+            color: #007bff;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .waterfall-grid {
+                column-count: 2;
+            }
+        }
+        @media (max-width: 600px) {
+            .waterfall-grid {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Listing</h1>
+        <div class="waterfall-grid">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x400" alt="Product Image 1">
+                <h3>Product Title 1</h3>
+                <p>A short description of product 1.</p>
+                <p class="price">$19.99</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/350x250" alt="Product Image 2">
+                <h3>Product Title 2</h3>
+                <p>Another product description. This one is a bit longer to test the layout.</p>
+                <p class="price">$29.50</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/250x350" alt="Product Image 3">
+                <h3>Product Title 3</h3>
+                <p>Short description.</p>
+                <p class="price">$10.00</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/400x300" alt="Product Image 4">
+                <h3>Product Title 4</h3>
+                <p>Description for product 4. Testing layout with different image sizes.</p>
+                <p class="price">$45.99</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x500" alt="Product Image 5">
+                <h3>Product Title 5</h3>
+                <p>Product description 5.</p>
+                <p class="price">$5.99</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/350x300" alt="Product Image 6">
+                <h3>Product Title 6</h3>
+                <p>Another product description.</p>
+                <p class="price">$35.00</p>
+            </div>
+             <div class="product-item">
+                <img src="https://via.placeholder.com/200x300" alt="Product Image 7">
+                <h3>Product Title 7</h3>
+                <p>Short description for product 7.</p>
+                <p class="price">$15.25</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x200" alt="Product Image 8">
+                <h3>Product Title 8</h3>
+                <p>Product description 8. A bit longer description.</p>
+                <p class="price">$22.00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
